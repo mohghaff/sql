@@ -56,7 +56,7 @@ if the product_qty_type is “unit,” and otherwise displays the word “bulk.�
 
 SELECT product_id
 ,product_name
-CASE
+,CASE
 WHEN product_qty_type = 'unit'
 	THEN 'unit'
 ELSE 'bulk'
