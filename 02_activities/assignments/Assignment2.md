@@ -54,7 +54,14 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 (to overwrite changes):
+
+The old address is replaced with the new one whenever there’s an update. It's a simple method and uses less storage but doesn’t keep a history of previous addresses.
+
+
+Type 2 (to retain changes):
+
+Each time an address changes, a new row is added to the table with the updated address. Historical addresses are kept, along with start and end dates to show when each address was valid.
 ```
 
 ***
